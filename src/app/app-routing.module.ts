@@ -3,19 +3,20 @@ import { RouterModule, Routes } from '@angular/router';
 import { AbogadosComponent } from './abogados/abogados.component';
 import { AppComponent } from './app.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
+import { InicioComponent } from './inicio/inicio.component';
 
 const routes: Routes = [
   {
     path: 'nosotros',
-    component:NosotrosComponent
+    component: NosotrosComponent
   },
   {
-  path: ' ',
-  component:AppComponent
+  path: '',
+  component: InicioComponent
 },
 {
   path: 'abogados',
-  component:AbogadosComponent
+  component: AbogadosComponent
 }
 ];
 
