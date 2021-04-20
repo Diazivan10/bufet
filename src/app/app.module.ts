@@ -10,6 +10,14 @@ import { LayoutComponent } from './layout/layout.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
+
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 
 @NgModule({
   declarations: [
@@ -23,9 +31,20 @@ import { InicioComponent } from './inicio/inicio.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: createTranslateLoader,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [],
+  exports: [
+    TranslateModule
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
