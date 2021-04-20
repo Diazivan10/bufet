@@ -9,10 +9,21 @@
 }
 .border-link:hover::after{
   width: 100%;
-  background: #3380FF;
+  background: white;
 }
 
 img {
   width: 50%;
   height: 50%;
+}
+
+div {
+  background-color: black;
+  
+}
+
+
+
+.navbar-light .navbar-nav .nav-link {
+  color:goldenrod;
 }
