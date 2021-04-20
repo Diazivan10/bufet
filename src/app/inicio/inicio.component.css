@@ -35,6 +35,7 @@ input::placeholder {
 .border-body{
   border-bottom: 5px solid #3380FF;
   border-radius: 10px;
+  
 }
 
 @media (max-width: 992px) {
