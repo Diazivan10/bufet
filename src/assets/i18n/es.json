@@ -1,5 +1,45 @@
 {
+  "NEED":"¿Necesitas asistencia legal?",
+  "PHONEPLACEHOLDER": "Ingrese telefono",
+  "EMAILPLACEHOLDER": "Ingrese un correo",
+  "BTN_SOLICITUD": "Solicitar",
+  "PRACTICEAREA": "Área de práctica",
+  "CRIMINALAW": "Derecho penal",
+  "DIVORCES": "Divorcios",
+  "INDUSTRIAL": "Industrial",
+  "CORPORATE": "Coorporativo",
+  "FINANCIAL": "Financiero",
+  "ACCIDENTS": "Accidentes",
+  "NEEDHELP": "¿Necesita ayuda legal? ¡Póngase en contacto con nuestros abogados!",
+  "WHY": "Por qué elegir LawPress",
+  "TEAM": "Tenemos el mejor equipo de abogados",
+  "BEST": "Mejor estrategia de caso",
+  "REVIEW": "Revise los documentos de su caso",
+  "WHATOUR": "Lo que dicen nuestros clientes sobre nuestros servicios",
+  "CONTACTUS": "Contactenos",
+  "LBL_NAME": "Nombre",
+  "LBL_PHONE": "Telefono",
+  "LBL_EMAIL": "Correo",
+  "LBL_MESSAGE": "detalles del caso",
+  "BTN_SEND": "Envía tu solicitud",
+  "LAWYER":"Nuestro equipo de abogados",
   "NAV":{
-    "HOME": "Inicio"
+    "HOME": "Inicio",
+    "US": "Nosotros",
+    "LAWYER": "Abogado",
+    "OFFICE":"Oficina",
+    "CONTACT": "Contacto"
+  },
+  "FOOTER":{
+    "CALLNOW":"LLÁMANOS AHORA!",
+    "SENDMESSAGE": "ENVÍANOS MENSAJE!",
+    "VISITOFFICE": "VISITA NUESTRA OFICINA!",
+    "FREE": "Consulta gratis."
+  },
+  "ABOUT":{
+    "ABOUTUS": "¿Quiénes somos?",
+    "VIEW": "Visión",
+    "MISSION": "Misión",
+    "DRAFT": "Proyecto"
   }
 }

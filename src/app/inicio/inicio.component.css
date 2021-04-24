@@ -6,9 +6,9 @@
 
 .asistencia{
   position: absolute;
-  top: 77%;
+  top: 80%;
   background-color: #f8f9fa;
-  width: 40%;
+  width: 60%;
   left: 50%;
   transform: translate(-50%, 0%);
   border: 1px solid #eee;
@@ -37,6 +37,64 @@ input::placeholder {
   border-radius: 10px;
 }
 
+.active-card:hover{
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+  transform: translateY(-15px);
+  transition: transform .5s ease;
+}
+
+.active-card{
+  border-radius: 10px;
+  transform: translateY(0px);
+  transition: transform .5s ease;
+}
+
+.estilo-letra{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.help{
+  background-color: #f8f8f8;
+}
+
+.bg-judicial{
+  background-image: url('../../assets/1591274954_526943_1591275445_noticia_normal.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.border-2{
+  overflow: hidden;
+  border: 3px solid #3380FF;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+}
+
+.title-help-legal{
+  font-size: 1.875rem;
+  text-align: left;
+  line-height: 40px;
+  padding: 10px 0;
+}
+.title-help-about{
+  font-size: 1.875rem;
+  text-align: left;
+  line-height: 40px;
+  padding: 10px 0;
+}
+
+.title-testimonio{
+  text-align: center;
+  font-size: 1.875rem;
+  margin: 20px 0;
+}
+
+.contact{
+  background-color: #f8f8f8;
+}
+
 @media (max-width: 992px) {
   .asistencia{
     position: relative !important;
@@ -45,5 +103,9 @@ input::placeholder {
     border: none;
     border-bottom: 1px solid #eee;
     border-radius: 0px;
+  }
+
+  .areas {
+    margin-top: 2rem;
   }
 }

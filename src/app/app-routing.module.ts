@@ -4,6 +4,7 @@ import { AbogadosComponent } from './abogados/abogados.component';
 import { AppComponent } from './app.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { OfficesComponent } from './offices/offices.component';
 
 const routes: Routes = [
   {
@@ -17,7 +18,11 @@ const routes: Routes = [
 {
   path: 'abogados',
   component: AbogadosComponent
-}
+},
+  {
+    path: 'oficinas',
+    component: OfficesComponent
+  }
 ];
 
 @NgModule({
