@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+.estilo-letra{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.title-about{
+  line-height: 5rem;
+  font-weight: 700;
+}
+.title-about-pre{
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 4rem;
+}

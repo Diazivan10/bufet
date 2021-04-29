@@ -13,6 +13,8 @@ import { InicioComponent } from './inicio/inicio.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { SwiperModule } from 'swiper/angular';
+import { OfficesComponent } from './offices/offices.component';
 
 
 export function createTranslateLoader(http: HttpClient) {
@@ -27,12 +29,14 @@ export function createTranslateLoader(http: HttpClient) {
     LayoutComponent,
     HeaderComponent,
     FooterComponent,
-    InicioComponent
+    InicioComponent,
+    OfficesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    SwiperModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
