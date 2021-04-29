@@ -1,5 +1,6 @@
 <ng-container>
- <app-header></app-header>
+ <app-header (open)="setToggle($event)"></app-header>
+  <app-menu (hidden)="setToggle($event)" [bandera]="toogle"></app-menu>
   <div class="container-fluid p-0">
     <router-outlet></router-outlet>
   </div>

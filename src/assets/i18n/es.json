@@ -41,5 +41,9 @@
     "VIEW": "Visión",
     "MISSION": "Misión",
     "DRAFT": "Proyecto"
+  },
+  "LAWYERS":{
+    "LAWYERJOSE":"El doctor ricardo es un abogado graduado de la universidad (UNICIENCIA), especializado en derecho constitucional tiene 50 años de edad, es una excelente abogado muy empatico con sus clientes y siempre busca el beneficio de ellos.",
+    "LAWYERRICHARD": "El doctor ricardo es un abogado graduado de la universidad (UNICIENCIA), especializado en derecho constitucional tiene 50 años de edad, es una excelente abogado muy empatico con sus clientes y siempre busca el beneficio de ellos."
   }
 }

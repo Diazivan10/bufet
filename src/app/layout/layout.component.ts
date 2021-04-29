@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./layout.component.css']
 })
 export class LayoutComponent implements OnInit {
-
+  toogle: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  setToggle(data: boolean) {
+    this.toogle = data;
   }
 
 }
