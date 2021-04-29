@@ -41,5 +41,9 @@
     "VIEW": "View",
     "MISSION": "Mission",
     "DRAFT": "Draft"
+  },
+  "LAWYERS":{
+    "LAWYERJOSE":"Dr. Ricardo is a lawyer graduated from the university (UNICIENCIA), specialized in constitutional law, he is 50 years old, he is an excellent lawyer, very empathetic with his clients and always seeks their benefit.",
+    "LAWYERRICHARD": "Dr. Ricardo is a lawyer graduated from the university (UNICIENCIA), specialized in constitutional law, he is 50 years old, he is an excellent lawyer, very empathetic with his clients and always seeks their benefit."
   }
 }

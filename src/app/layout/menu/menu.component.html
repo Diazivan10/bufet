@@ -1,0 +1,32 @@
+<ng-container>
+  <div [className]="bandera ? 'open-menu' : 'close-menu'">
+    <div class="row m-0 p-0 d-flex justify-content-center collapse navbar-collapse position-relative">
+      <div class="close btn_close" (click)="close()">
+        X
+      </div>
+      <div class="col-6">
+        <ul class="navbar-nav mr-auto mt-5">
+          <li class="nav-item active border-link mx-2 border-bottom text-center text-white">
+            <a class="nav-link p-0 px-2 pt-2 pb-1 text-white" (click)="goMenu('HOME')">{{'NAV.HOME' | translate}}</a>
+          </li>
+          <li class="nav-item active border-link mx-2 border-bottom text-center text-white">
+            <a class="nav-link p-0 px-2 pt-2 pb-1 text-white" (click)="goMenu('ABOUTUS')">{{'NAV.US' | translate}}</a>
+          </li>
+          <li class="nav-item border-link mx-2 border-bottom text-center text-white">
+            <a class="nav-link p-0 px-2 pt-2 pb-1 text-white" (click)="goMenu('LAWYER')">{{'NAV.LAWYER' |
+              translate}}</a>
+          </li>
+          <li class="nav-item mx-2 border-bottom text-center d-flex justify-content-center">
+            <div class="form-group m-0 pt-1 col-5">
+              <select class="form-control form-control-sm border-0 text-white" (change)="selectLeague($event)"
+                style="background-color: transparent;">
+                <option value="es">ES</option>
+                <option value="en">EN</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</ng-container>

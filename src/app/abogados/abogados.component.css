@@ -54,3 +54,9 @@
   font-size: 1.875rem;
 }
 
+.whatsapp{
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 99;
+}

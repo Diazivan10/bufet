@@ -6,7 +6,7 @@
       </a>
     </div>
     <div class="col-lg-4 col-xl-4 col-md-10 col-sm-10 col-10 text-right">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" (click)="show()" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse">
@@ -20,8 +20,14 @@
           <li class="nav-item border-link mx-2">
             <a class="nav-link p-0 px-2 pt-2 pb-1" routerLink="/abogados" routerLinkActive="active">{{'NAV.LAWYER' | translate}}</a>
           </li>
-          <li class="nav-item border-link mx-2">
-            <a class="nav-link p-0 px-2 pt-2 pb-1" routerLink="/oficinas" routerLinkActive="active">{{'NAV.OFFICE' | translate}}</a>
+          <li class="nav-item mx-2">
+            <div class="form-group m-0 pt-1">
+              <select class="form-control form-control-sm border-0" (change)="selectLeague($event)"
+                style="background-color: black; color: goldenrod;">
+                <option value="es">ES</option>
+                <option value="en">EN</option>
+              </select>
+            </div>
           </li>
         </ul>
       </div>
