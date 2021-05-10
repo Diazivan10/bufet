@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 .footer{
-  background-color: #3380FF;
+  background-color: black;
+  
 }
+
+
+
 
 .p-footer{
   font-family: 'Montserrat',
   sans-serif;
+
 }

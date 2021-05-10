@@ -1,16 +1,19 @@
-<nav class="navbar-expand-lg navbar-light bg-light p-2">
-  <div class="row m-0  justify-content-center">
-    <div class="col-lg-2 col-xl-2 col-md-2 col-sm-2 col-2">
-      <a class="navbar-brand" href="#">
-        <img src="./assets/logo.png">
-      </a>
-    </div>
+<div style="text-align: center;">
+  <a class="meunprincipal" href="#">
+    <img src="./assets/logo2.jpg" alt=""  style="width: 50%; height: 50%;">
+  </a>
+</div>
+<nav class="navbar-expand-lg navbar-light bg-light">
+  <div class="row m-0  justify-content-center p-2">
+    
     <div class="col-lg-4 col-xl-4 col-md-10 col-sm-10 col-10 text-right">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" (click)="show()" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon">
+          <img src="../../../assets/menu.svg">
+        </span>
       </button>
       <div class="collapse navbar-collapse">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav m-auto">
           <li class="nav-item active border-link mx-2">
             <a class="nav-link p-0 px-2 pt-2 pb-1" routerLink="" routerLinkActive="active">Inicio</a>
           </li>
@@ -23,7 +26,7 @@
           <li class="nav-item mx-2">
             <div class="form-group m-0 pt-1">
               <select class="form-control form-control-sm border-0" (change)="selectLeague($event)"
-                style="background-color: black; color: goldenrod;">
+                style="background-color: black; color: #ffff;">
                 <option value="es">ES</option>
                 <option value="en">EN</option>
               </select>
