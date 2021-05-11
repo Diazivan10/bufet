@@ -4,6 +4,11 @@
   
 }
 
+@media(max-width:600px){
+.footer{
+ word-break: break-word;
+}
+}
 
 
 

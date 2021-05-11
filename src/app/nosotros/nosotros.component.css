@@ -19,3 +19,8 @@
   right: 20px;
   z-index: 99;
 }
+
+.row {
+  background: black;
+  color: white;
+}

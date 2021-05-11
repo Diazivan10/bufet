@@ -43,7 +43,7 @@
 }
 
 .flip-card-back {
-  background-color: #2980b9;
+  background-color: black;
   color: white;
   transform: rotateY(180deg);
   border-radius: 10px;
@@ -59,4 +59,8 @@
   bottom: 30px;
   right: 20px;
   z-index: 99;
+}
+.row{
+  background: black;
+  color: white;
 }

@@ -40,10 +40,14 @@
     "ABOUTUS": "¿Quiénes somos?",
     "VIEW": "Visión",
     "MISSION": "Misión",
-    "DRAFT": "Proyecto"
-  },
+    "DRAFT": "Proyecto",
+    "ABOUTVIEWDESCRIPTION":"American Legal Associates LLC., se proyecta como la mejor firma de abogados, lider en consultoría jurídica del país y mercado internacional, por la excelencia y calidad de los servicios brindados, siendo referencia en el sector en cuanto a los resultados y la satisfaccion del cliente.",
+    "ABOUTMISIONDESCRIPTION":"Nuestra organización American Legal Associates LLC., ofrece los servicios de protección jurídica a aquellos que se encuentren en situación de indefensión o de vulneración de sus Derechos Constitucionales y todo lo referente a la justicia en general dentro de cualquier ámbito en el cual se presente no solo a nivel nacional sino también internacional. Así mismo, nuestra es nuestra labor proveer de un consejo a nuestros clientes en pro de defender todos y cada uno de sus derechos."
+},
   "LAWYERS":{
+    "LAWYEREQUIPO":"A continuacion presentaremos a nuestros abogados que dia a dia se enfrentan en el mundo de la ley para asi poder brindar una gran atencion y llevar satisfaccion a sus clientes.",
     "LAWYERJOSE":"El doctor ricardo es un abogado graduado de la universidad (UNICIENCIA), especializado en derecho constitucional tiene 50 años de edad, es una excelente abogado muy empatico con sus clientes y siempre busca el beneficio de ellos.",
     "LAWYERRICHARD": "El doctor ricardo es un abogado graduado de la universidad (UNICIENCIA), especializado en derecho constitucional tiene 50 años de edad, es una excelente abogado muy empatico con sus clientes y siempre busca el beneficio de ellos."
+
   }
 }

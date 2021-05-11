@@ -30,6 +30,10 @@ input::placeholder {
 
 .areas{
   margin-top: 6rem;
+  background: black;
+  
+  
+  ;
 }
 
 .border-body{
@@ -94,6 +98,8 @@ input::placeholder {
 
 .contact{
   background-color: #f8f8f8;
+  background: black;
+  color: white;
 }
 
 .whatsapp{
@@ -103,7 +109,7 @@ input::placeholder {
   z-index: 99;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 600px) {
   .asistencia{
     position: relative !important;
     background-color: #fff;
@@ -115,5 +121,8 @@ input::placeholder {
 
   .areas {
     margin-top: 2rem;
-  }
+    }
+
+
 }
+

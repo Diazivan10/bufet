@@ -40,9 +40,12 @@
     "ABOUTUS": "¿About us?",
     "VIEW": "View",
     "MISSION": "Mission",
-    "DRAFT": "Draft"
-  },
+    "DRAFT": "Draft",
+    "ABOUTVIEWDESCRIPTION":"American Legal Associates LLC., Is projected as the best law firm, leader in legal consulting in the country and international market, for the excellence and quality of the services provided, being a reference in the sector in terms of results and customer satisfaction.",
+    "ABOUTMISIONDESCRIPTION":"Our organization American Legal Associates LLC., Offers legal protection services to those who are in a situation of defenselessness or violation of their Constitutional Rights and everything related to justice in general within any field in which it is presented not only nationally but also internationally. Likewise, our job is to provide advice to our clients in order to defend each and every one of their rights."   
+},
   "LAWYERS":{
+    "LAWYEREQUIPO":"Next we will present our lawyers who face each day in the world of the law in order to provide great attention and bring satisfaction to its customers.",
     "LAWYERJOSE":"Dr. Ricardo is a lawyer graduated from the university (UNICIENCIA), specialized in constitutional law, he is 50 years old, he is an excellent lawyer, very empathetic with his clients and always seeks their benefit.",
     "LAWYERRICHARD": "Dr. Ricardo is a lawyer graduated from the university (UNICIENCIA), specialized in constitutional law, he is 50 years old, he is an excellent lawyer, very empathetic with his clients and always seeks their benefit."
   }
