@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm, FormsModule, FormBuilder, Validators, NgModel } from '@angular/forms';
+import { HttpClient } from "@angular/common/http";
+import { map } from "rxjs/operators";
 // import Swiper core and required modules
 import SwiperCore, {
   EffectFade,
@@ -10,6 +13,9 @@ import SwiperCore, {
   SwiperOptions,
   A11y,
 } from 'swiper/core';
+import { ToastrService, ToastrModule } from 'ngx-toastr';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from '../app-routing.module';
 // install Swiper modules
 SwiperCore.use([EffectFade, Navigation, Pagination, Scrollbar, A11y, Virtual, Autoplay]);
 
@@ -50,8 +56,10 @@ export class InicioComponent implements OnInit {
   slides = Array.from({ length: 10 }).map(
     (el, index) => `Slide ${index + 1}`
   );
+  
 
-  constructor() { }
+
+  constructor(private _http: HttpClient, private toastr: ToastrService){}
 
   ngOnInit(): void {
   }
@@ -62,5 +70,66 @@ export class InicioComponent implements OnInit {
   onSlideChange() {
     console.log('slide change');
   }
+// sendGetRequest() {
+//     return this._http.get('http://localhost/enviocorreos/envio_correos.php');
+//   }
+
+guardar(Form: NgForm){
+
+  console.log(Form.value);
+
+// this._http
+//       .post(`https://localhost/2021/enviocorreos/envio_correos.php`,Form.value)
+//       .pipe(
+//         map(resp => {
+//             console.log(resp);
+//         })
+//       );
+
+this._http.put('https://criminallegalassociates.com/envioCorreos/prueba.php',  Form.value ).subscribe(data => {
+      //  var datajson = JSON.stringify(data);
+
+console.log(data);
+
+    
+
+
+       if (data == true) {
+        this.toastr.success('Sus Datos se enviaron Correctamente // Your data was sent correctly'  ,  '| Criminal Legal Associates |');
+        
+Form.reset();
+
+}else{
+  this.toastr.warning(' Faltan Campos por Diligenciar // Missing fields to fill out'  ,  '| Criminal Legal Associates')
+}
+
+
+    })
+   
+    
+   
+   
+
+// this._http.get('http://localhost/enviocorreos/envio_correos.php')
+// .subscribe(data => {   // data is already a JSON object
+//     console.log(data);
+// });
+
+// this.sendGetRequest().subscribe((responseBody) => {
+//       console.log(responseBody);
+// });
+
+// this._http.get('http://localhost/2021/enviocorreos/envio_correos.php').subscribe(data => console.log(data));
+
 
 }
+usuario = {
+  nombre: "",
+  telefono: "",
+  correo: "",
+  mensaje: ""
+}
+}
+
+
+  

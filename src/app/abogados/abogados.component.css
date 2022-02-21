@@ -4,10 +4,13 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.text-white{
+  font-family: 'Montserrat', sans-serif;
+}
 .flip-card {
   background-color: transparent;
   width: 300px;
-  height: 300px;
+  height: 350px;
   perspective: 1000px;
   border-radius: 10px;
 }

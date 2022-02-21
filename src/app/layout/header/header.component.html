@@ -1,6 +1,6 @@
 <div style="text-align: center;">
   <a class="menuprincipal" href="#">
-    <img src="./assets/logo2.jpg" alt=""  style="width: 50%; height: 50%;">
+    <img src="./assets/logo.jpg" alt=""  style="width: 50%; height: 50%;">
   </a>
 </div>
 <nav class="navbar-expand-lg navbar-light bg-light">
@@ -15,7 +15,7 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav m-auto">
           <li class="nav-item active border-link mx-2">
-            <a class="nav-link p-0 px-2 pt-2 pb-1" routerLink="" routerLinkActive="active">Inicio</a>
+            <a class="nav-link p-0 px-2 pt-2 pb-1" routerLink="" routerLinkActive="active" >{{'NAV.HOME'| translate}}</a>
           </li>
           <li class="nav-item active border-link mx-2">
             <a class="nav-link p-0 px-2 pt-2 pb-1" routerLink="/nosotros" routerLinkActive="active">{{'NAV.US' | translate}}</a>
@@ -26,7 +26,7 @@
           <li class="nav-item mx-2">
             <div class="form-group m-0 pt-1">
               <select class="form-control form-control-sm border-0" (change)="selectLeague($event)"
-                style="background-color: black; color: #ffff;">
+                style="background-color: black; color: white; font-size: large; font-weight: bold;">
                 <option value="es">ES</option>
                 <option value="en">EN</option>
               </select>

@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
@@ -16,6 +15,10 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { SwiperModule } from 'swiper/angular';
 import { OfficesComponent } from './offices/offices.component';
 import { MenuComponent } from './layout/menu/menu.component';
+import { FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 
 export function createTranslateLoader(http: HttpClient) {
@@ -39,18 +42,25 @@ export function createTranslateLoader(http: HttpClient) {
     AppRoutingModule,
     HttpClientModule,
     SwiperModule,
+    ReactiveFormsModule,
+    FormsModule,
+    BrowserAnimationsModule, // required animations module
+    ToastrModule.forRoot(), // ToastrModule added
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
         useFactory: createTranslateLoader,
         deps: [HttpClient]
       }
+      
     })
   ],
-  providers: [],
+  
   exports: [
     TranslateModule
   ],
   bootstrap: [AppComponent]
+
 })
 export class AppModule { }
+
