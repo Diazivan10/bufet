@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 .h-slider{
-  height: calc( 100vh - 200px);
+  height: 100%;
+  width: 100%;
 }
+
+
+
 
 .asistencia{
   position: absolute;
@@ -14,6 +18,7 @@
   border: 1px solid #eee;
   border-radius: 5px;
 }
+
 
 p{
   font-family: 'Montserrat', sans-serif;
@@ -30,10 +35,6 @@ input::placeholder {
 
 .areas{
   margin-top: 6rem;
-  background: black;
-  
-  
-  ;
 }
 
 .border-body{
@@ -58,16 +59,8 @@ input::placeholder {
   font-family: 'Montserrat', sans-serif;
 }
 
-.help{
-  background-color: #f8f8f8;
-}
 
-.bg-judicial{
-  background-image: url('../../assets/1591274954_526943_1591275445_noticia_normal.jpg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  position: relative;
-}
+
 
 .border-2{
   overflow: hidden;
@@ -97,8 +90,6 @@ input::placeholder {
 }
 
 .contact{
-  background-color: #f8f8f8;
-  background: black;
   color: white;
 }
 
@@ -109,7 +100,23 @@ input::placeholder {
   z-index: 99;
 }
 
-@media (max-width: 600px) {
+#contenedor{
+  width: 90%; margin: 0 auto;
+ 
+ 
+}
+#imagen{
+  background-image: url("https://cdn.pixabay.com/photo/2017/06/09/22/56/lady-justice-2388500_960_720.jpg");
+  background-size: cover;
+  background-size: 25rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  max-width: max-content;
+
+}
+
+@media (max-width: 390px) {
   .asistencia{
     position: relative !important;
     background-color: #fff;
@@ -124,5 +131,26 @@ input::placeholder {
     }
 
 
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+.footer{
+  background-color: transparent;
+  
+}
+
+@media(width: 100%){
+.footer{
+ word-break: break-word;
+}
+}
+
+section{
+  width: 100%;
+}
+
+.p-footer{
+  font-family: 'Montserrat',
+  sans-serif;
+  
 }
 
