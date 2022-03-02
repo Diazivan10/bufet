@@ -8,16 +8,7 @@
 
 
 
-.asistencia{
-  position: absolute;
-  top: 80%;
-  background-color: #f8f9fa;
-  width: 60%;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  border: 1px solid #eee;
-  border-radius: 5px;
-}
+
 
 
 p{
@@ -108,37 +99,41 @@ input::placeholder {
 #imagen{
   background-image: url("https://cdn.pixabay.com/photo/2017/06/09/22/56/lady-justice-2388500_960_720.jpg");
   background-size: cover;
-  background-size: 25rem;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   max-width: max-content;
+ }
 
-}
-
+ 
+ 
 @media (max-width: 390px) {
-  .asistencia{
-    position: relative !important;
-    background-color: #fff;
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #eee;
-    border-radius: 0px;
-  }
 
   .areas {
     margin-top: 2rem;
+    display: inline-block;
+    width: 90%;
     }
-
+.areas1 div{
+    width: 100%;
+}
 
 }
+
+/*
+Css footer
+*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 .footer{
-  background-color: transparent;
+  
   
 }
+.col-9{
+  opacity:1.0;
+  filter:alpha(opacity=100);
+}
 
-@media(width: 100%){
+@media(max-width: 390px){
 .footer{
  word-break: break-word;
 }
