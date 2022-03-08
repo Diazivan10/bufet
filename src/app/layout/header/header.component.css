@@ -22,13 +22,11 @@ a{
 @media (max-width: 600px) {
   
     .navbar-light .navbar-toggler-icon {
-      background: #fff;
+      background: black;
       
       font-weight: bold;
   }
-  .menuprincipal{
-   
-  }
+ 
 
   }
 
