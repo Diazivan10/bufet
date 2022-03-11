@@ -200,7 +200,7 @@ html, body {
     height: auto;
   }
 
-  .blur_back {
+  .blur_back  {
     width: 100%;
     background-position: 50% 50% !important;
   }
@@ -223,8 +223,6 @@ html, body {
 #ricardo:hover {
   box-shadow: 0px 0px 120px -55px rgba(199, 147, 75, 0.7);
 }
-
-
 
 
 #richard {
