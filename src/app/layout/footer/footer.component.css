@@ -1,17 +1,19 @@
+/*
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 .footer{
   background-color: transparent;
   
 }
 
-@media(width: 100%){
+@media screen and (min-width: 768px) {
 .footer{
  word-break: break-word;
 }
 }
-
+@media screen and (max-width: 768px) {
 section{
   width: 100%;
+}
 }
 
 .p-footer{
@@ -19,9 +21,7 @@ section{
   sans-serif;
   
 }
-#contenedor{
-	width: 90%; margin: 0 auto;
-}
+*/
+/* Footer */
 
-
-
+  

@@ -1,9 +1,5 @@
-
-
-
-<body id="imagen">
-  <ng-container>
-    
+<ng-container>
+  <section>
     <!-- Areas -->
     <section id="contenedor">
       <div class="areas">
@@ -203,18 +199,22 @@
         </div>
       </div>
     </section>
-    <!-- footer-->
 
-
-    <ng-container>
-      <section class="footer" id="contenedor">
+    <!--Footer-->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    <section id="footer">
+      <div class="container">
         <div class="row m-0 d-flex justify-content-center py-3 align-items-center">
-          <div class="col-10 col-md-3 col-lg-4 mb-2">
-            <div class="row m-0 p-0 d-flex align-items-center">
-              <div class="col-3">
-                <img src="../../../assets/phone.svg" alt="" width="50" height="50">
-              </div>
-              <div class="col-9 col-md-9">
+          <!--LLamenos-->
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <h5>
+              <img src="../../../assets/phone.svg" alt="" width="50" height="50">
+            </h5>
+            <ul class="list-unstyled quick-links">
+              <li>
                 <p class="m-0 text-white p-footer">{{ 'FOOTER.CALLNOW' | translate}}</p>
                 <img src="../../../assets/colombia.svg" alt="" width="30" height="30">
                 <p></p>
@@ -227,16 +227,15 @@
                 <img src="../../../assets/puerto-rico.svg" alt="" width="30" height="30">
                 <p></p>
                 <a class="m-0 text-white p-footer" href="tel:+10087874631363">(787) 463-1363</a>
-
-              </div>
-            </div>
+            </ul>
           </div>
-          <div class="col-10 col-md-3 col-lg-4 mb-2">
-            <div class="row m-0 p-0 d-flex align-items-center">
-              <div class="col-3">
-                <img src="../../../assets/placeholder.svg" alt="" width="50" height="50">
-              </div>
-              <div class="col-9 col-md-9">
+          <!-- Ubicacion-->
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <h5>
+              <img src="../../../assets/placeholder.svg" alt="" width="50" height="50">
+            </h5>
+            <ul class="list-unstyled quick-links">
+              <li>
                 <p class="text-white m-0 p-footer">{{ 'FOOTER.VISITOFFICE' | translate}}</p>
                 <img src="../../../assets/colombia.svg" alt="" width="30" height="30">
                 <p></p>
@@ -249,15 +248,16 @@
                 <img src="../../../assets/puerto-rico.svg" alt="" width="30" height="30">
                 <p></p>
                 <p class=" m-0 text-white m-0 p-footer">Domenech 220 # 2036 San Juan, PR 00918</p>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
-          <div class="col-10 col-md-3 col-lg-4 mb-2">
-            <div class="row m-0 p-0 d-flex align-items-center">
-              <div class="col-3">
-                <img src="../../../assets/email.svg" alt="" width="50" height="50">
-              </div>
-              <div class="col-9 col-md-9">
+          <!--Escribenos-->
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <h5>
+              <img src="../../../assets/email.svg" alt="" width="50" height="50">
+            </h5>
+            <ul class="list-unstyled quick-links">
+              <li>
                 <p class=" m-0 text-white m-0 p-footer ">{{ 'FOOTER.SENDMESSAGE' | translate}}</p>
                 <img src="../../../assets/colombia.svg" alt="" width="30" height="30">
                 <p></p>
@@ -267,20 +267,52 @@
                 <img src="../../../assets/estados-unidos.svg" alt="" width="30" height="30">
                 <p></p>
                 <a class="m-0 text-white m-0 p-footer"
-                href="unitedstates@criminallegalassociates.com">unitedstates@criminallegalassociates.com</a>
+                  href="mailto:unitedstates@criminallegalassociates.com">unitedstates@criminallegalassociates.com</a>
                 <p></p>
                 <img src="../../../assets/puerto-rico.svg" alt="" width="30" height="30">
                 <p></p>
                 <a class="m-0 text-white m-0 p-footer"
-                href="puertorico@criminallegalassociates.com">puertorico@criminallegalassociates.com</a>
-              </div>
-            </div>
+                  href="mailto:puertorico@criminallegalassociates.com">puertorico@criminallegalassociates.com</a>
+              </li>
+            </ul>
           </div>
-
-          
         </div>
-      </section>
-    </ng-container>
+        <!--Redes Sociales Iconos-->
+        <!--
+   <div class="row">
+     <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+       <ul class="list-unstyled list-inline social text-center">
+         <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-facebook"></i></a>
+         </li>
+         <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-twitter"></i></a>
+         </li>
+         <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-instagram"></i></a>
+         </li>
+         <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i
+               class="fa fa-google-plus"></i></a></li>
+         <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02" target="_blank"><i
+               class="fa fa-envelope"></i></a></li>
+       </ul>
+     </div>
+     <hr>
+   </div>
+   -->
+        <!--Derechos de Autor-->
+        <p></p>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-left text-white">
+            <p class="h6">Copyright © 2022,<a class="text-green ml-2" href="https://www.criminallegalassociates.com"
+                target="_blank">Criminal Legal Associates.</a></p>
+            <p></p>
+            <p class="h6">Creado y Diseñado por<a class="text-green ml-2" href="tel:+573012145455" target="_blank">Ivan
+                Ricardo Diaz C.</a></p>
+          </div>
+          <hr>
+        </div>
+      </div>
+    </section>
+
+
 
     <!-- WHATSAPP -->
     <div class="whatsapp">
@@ -288,5 +320,5 @@
         <img src="../../assets/whatsapp.png" alt="logo_whatsapp" srcset="" width="70">
       </a>
     </div>
-  </ng-container>
-</body>
+  </section>
+</ng-container>
