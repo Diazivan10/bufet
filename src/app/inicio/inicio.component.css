@@ -1,19 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 .h-slider{
-  height: calc( 100vh - 200px);
+  height: 100%;
+  width: 100%;
 }
 
-.asistencia{
-  position: absolute;
-  top: 80%;
-  background-color: #f8f9fa;
-  width: 60%;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  border: 1px solid #eee;
-  border-radius: 5px;
-}
+
+
+
+
+
 
 p{
   font-family: 'Montserrat', sans-serif;
@@ -30,14 +26,10 @@ input::placeholder {
 
 .areas{
   margin-top: 6rem;
-  background: black;
-  
-  
-  ;
 }
 
 .border-body{
-  border-bottom: 5px solid #3380FF;
+  border-bottom: 5px solid goldenrod;
   border-radius: 10px;
   
 }
@@ -58,16 +50,8 @@ input::placeholder {
   font-family: 'Montserrat', sans-serif;
 }
 
-.help{
-  background-color: #f8f8f8;
-}
 
-.bg-judicial{
-  background-image: url('../../assets/1591274954_526943_1591275445_noticia_normal.jpg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  position: relative;
-}
+
 
 .border-2{
   overflow: hidden;
@@ -97,8 +81,6 @@ input::placeholder {
 }
 
 .contact{
-  background-color: #f8f8f8;
-  background: black;
   color: white;
 }
 
@@ -109,20 +91,106 @@ input::placeholder {
   z-index: 99;
 }
 
-@media (max-width: 600px) {
-  .asistencia{
-    position: relative !important;
-    background-color: #fff;
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #eee;
-    border-radius: 0px;
-  }
+#contenedor{
+  width: 90%; margin: 0 auto;
+ 
+ 
+}
+ 
+@media (max-width: 390px) {
 
   .areas {
     margin-top: 2rem;
+    display: inline-block;
+    width: 90%;
     }
-
+.areas1 div{
+    width: 100%;
+}
 
 }
+
+/* Footer*/
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+    padding: 60px 0;
+    background: url("https://images.pexels.com/photos/6077123/pexels-photo-6077123.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"); 
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    max-width: 100%;
+    background-color: black;
+}
+
+body{
+   /* background: #9c9c9c    !important;*/
+
+    
+  }
+
+#footer h5{
+	padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer a {
+    color: white;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer p{
+color: white;
+}
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+	color:black;
+}
+#footer ul.social li a:hover{
+	color:black;
+}
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}
+
 
