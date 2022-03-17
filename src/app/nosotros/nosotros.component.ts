@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-nosotros',
@@ -6,12 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nosotros.component.css']
 })
 export class NosotrosComponent implements OnInit {
+  toggle: boolean = false;
+  @Output() open: EventEmitter<boolean> = new EventEmitter();
 
-  constructor() { }
+  constructor(private translate: TranslateService) { }
 
   ngOnInit(): void {
   }
 
+  selectLeague(idioma: any) {
+    this.translate.use(idioma.target.value);
+  }
+  show(){
+    this.toggle = !this.toggle
+    this.open.emit(this.toggle);
+  }
 
+  
 
 }

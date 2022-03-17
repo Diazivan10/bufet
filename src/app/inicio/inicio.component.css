@@ -1,27 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+/*head*/
+.navbar {
+  transition: all 0.4s;
+}
 
+.navbar .nav-link {
+  color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .navbar-brand {
+  color: #fff;
+}
+
+
+/* Change navbar styling on scroll */
+.navbar.active {
+  background: #fff;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+  color: #555;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+  color: #555;
+  text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+  color: #555;
+}
+
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+  .navbar {
+    background: #fff;
+
+  }
+
+  .navbar .navbar-brand, .navbar .nav-link {
+      color: #555;
+  }
+}
+
+#idiomas{
+  font-size: large;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+}
+option{
+  font-size: large;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+}
+
+
+
+/*body*/
 .h-slider{
   height: 100%;
   width: 100%;
 }
 
 
-
-
-
-
-
 p{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h3, h2, h4, h5, h1{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
 }
 
 input::placeholder {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .areas{
@@ -47,7 +110,7 @@ input::placeholder {
 }
 
 .estilo-letra{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -109,42 +172,37 @@ input::placeholder {
 }
 
 }
-
 /* Footer*/
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 section {
-    padding: 60px 0;
-    background: url("https://images.pexels.com/photos/6077123/pexels-photo-6077123.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"); 
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    max-width: 100%;
-    background-color: black;
+  padding: 60px 0;
+  background: url("../../assets/balanza.png"); 
+  background-size: auto;
+  background-position: center center;
+  background-attachment: fixed;
+  max-width: 100%;
+  
 }
 
-body{
-   /* background: #9c9c9c    !important;*/
 
-    
-  }
 
 #footer h5{
 	padding-left: 10px;
     border-left: 3px solid #eeeeee;
     padding-bottom: 6px;
     margin-bottom: 20px;
-    color:#ffffff;
+    color:goldenrod;
 }
 #footer a {
-    color: white;
+    color: goldenrod;
     text-decoration: none !important;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
 }
 #footer p{
-color: white;
+color: goldenrod;
 }
+
 #footer ul.social li{
 	padding: 3px 0;
 }
@@ -159,13 +217,7 @@ color: white;
 	font-size:30px;
 	margin-top:-10px;
 }
-#footer ul.social li a,
-#footer ul.quick-links li a{
-	color:black;
-}
-#footer ul.social li a:hover{
-	color:black;
-}
+
 #footer ul.quick-links li{
 	padding: 3px 0;
 	-webkit-transition: .5s all ease;

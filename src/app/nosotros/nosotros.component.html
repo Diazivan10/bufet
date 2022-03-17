@@ -1,145 +1,189 @@
-<ng-container >
-    <section>
-        <!--Nosotros-->
-        <div class="row m-0 p-0">
-            <div class="col-12">
-                <h1 class="text-center title-about estilo-letra">{{'ABOUT.ABOUTUS' | translate}}</h1>
-                <div class="px-5">
-                    <p class="text-justify estilo-letra">{{'ABOUT.ABOUTWE' | translate}}</p>
-                    
-                </div>
-            </div>
-            <div class="col-12 my-5">
-                <div class="row m-0 p-0">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-4">
-                        <div class="row m-0 p-0">
-                            <div class="col-12 text-center">
-                                <img src="../../assets/vision.svg" alt="" width="100" height="100">
-                            </div>
-                            <div class="col-12">
-                                <h1 class="text-center estilo-letra title-about-pre">{{'ABOUT.VIEW' | translate}}</h1>
-                                <p class="text-justify estilo-letra">{{'ABOUT.ABOUTVIEWDESCRIPTION' | translate}}</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-4">
-                        <div class="row m-0 p-0">
-                            <div class="col-12 text-center">
-                                <img src="../../assets/negocios.svg" alt="" width="100" height="100">
-                            </div>
-                            <div class="col-12">
-                                <h1 class="text-center estilo-letra title-about-pre">{{'ABOUT.MISSION' | translate}}</h1>
-                                <p class="text-justify estilo-letra">{{'ABOUT.ABOUTMISIONDESCRIPTION'|translate}}</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-4">
-                        <div class="row m-0 p-0">
-                            <div class="col-12 text-center">
-                                <img src="../../assets/pruebas.svg" alt="" width="100" height="100">
-                            </div>
-                            <div class="col-12">
-                                <h1 class="text-center estilo-letra title-about-pre">{{'ABOUT.CORPORATEVALUES' | translate}}</h1>
-                                <u class="text-justify estilo-letra" style="font-weight: bold;">{{'ABOUT.COMMITMENT' | translate}}</u>
-                                <p class="text-justify estilo-letra">{{'ABOUT.COMMITMENT1' | translate}}</p>
-                                <u class="text-justify estilo-letra" style="font-weight: bold;">{{'ABOUT.LOYALTY' | translate}}</u>
-                                <p class="text-justify estilo-letra">{{'ABOUT.LOYALTY1' | translate}}</p>
-                                <u class="text-justify estilo-letra" style="font-weight: bold;">{{'ABOUT.JUSTICE' | translate}}</u>
-                                <p class="text-justify estilo-letra">{{'ABOUT.JUSTICE1' | translate}}</p>
-                                <u class="text-justify estilo-letra" style="font-weight: bold;">{{'ABOUT.ETHICS' | translate}}</u>
-                                <P class="text-justify estilo-letra">{{'ABOUT.ETHICS1' | translate}}</P>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-     <!-- WHATSAPP -->
-    <div class="whatsapp">
-        <a href="https://api.whatsapp.com/send?phone=13054977656&text='Hola,%20necesito%20ayuda%20legal'" target="_blank">
-          <img src="../../assets/whatsapp.png" alt="logo_whatsapp" srcset="" width="70">
+<ng-container>
+  <section>
+    <!--Logo-->
+    <section id="contenedor">
+      <div style="text-align: center;">
+        <a class="menuprincipal" href="#">
+          <img src="../../assets/logo2.png" alt="" style="width: 50%; height: 50%;">
         </a>
       </div>
-      <!--Footer-->
-      <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-      <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <!------ Include the above in your HEAD tag ---------->
-      <section id="footer">
-        <div class="container">
-          <div class="row m-0 d-flex justify-content-center py-3 align-items-center">
-            <!--LLamenos-->
-            <div class="col-xs-12 col-sm-4 col-md-4">
-              <h5>
-                <img src="../../../assets/phone.svg" alt="" width="50" height="50">
-              </h5>
-              <ul class="list-unstyled quick-links">
-                <li>
-                  <p class="m-0 text-white p-footer">{{ 'FOOTER.CALLNOW' | translate}}</p>
-                  <img src="../../../assets/colombia.svg" alt="" width="30" height="30">
-                  <p></p>
-                  <a class="m-0 text-white p-footer" href="tel:+573012145455">(301) 582-0657</a>
-                  <p></p>
-                  <img src="../../../assets/estados-unidos.svg" alt="" width="30" height="30">
-                  <p></p>
-                  <a class="m-0 text-white p-footer" href="tel:+13054977656"> (305) 497-7656</a>
-                  <p></p>
-                  <img src="../../../assets/puerto-rico.svg" alt="" width="30" height="30">
-                  <p></p>
-                  <a class="m-0 text-white p-footer" href="tel:+10087874631363">(787) 463-1363</a>
-              </ul>
-            </div>
-            <!-- Ubicacion-->
-            <div class="col-xs-12 col-sm-4 col-md-4">
-              <h5>
-                <img src="../../../assets/placeholder.svg" alt="" width="50" height="50">
-              </h5>
-              <ul class="list-unstyled quick-links">
-                <li>
-                  <p class="text-white m-0 p-footer">{{ 'FOOTER.VISITOFFICE' | translate}}</p>
-                  <img src="../../../assets/colombia.svg" alt="" width="30" height="30">
-                  <p></p>
-                  <p class=" m-0 text-white m-0 p-footer">Cra 24 #35-43 Bucaramanga, Colombia</p>
-                  <p></p>
-                  <img src="../../../assets/estados-unidos.svg" alt="" width="30" height="30">
-                  <p></p>
-                  <p class="m-0 text-white m-0 p-footer"> 13727 SW 152 ST, suite 726 Miami, FL 33177</p>
-                  <p></p>
-                  <img src="../../../assets/puerto-rico.svg" alt="" width="30" height="30">
-                  <p></p>
-                  <p class=" m-0 text-white m-0 p-footer">Domenech 220 # 2036 San Juan, PR 00918</p>
-                </li>
-              </ul>
-            </div>
-            <!--Escribenos-->
-            <div class="col-xs-12 col-sm-4 col-md-4">
-              <h5>
-                <img src="../../../assets/email.svg" alt="" width="50" height="50">
-              </h5>
-              <ul class="list-unstyled quick-links">
-                <li>
-                  <p class=" m-0 text-white m-0 p-footer ">{{ 'FOOTER.SENDMESSAGE' | translate}}</p>
-                  <img src="../../../assets/colombia.svg" alt="" width="30" height="30">
-                  <p></p>
-                  <a class=" m-0 text-white m-0 p-footer"
-                    href="mailto:colombia@criminallegalassociates.com">colombia@criminallegalassociates.com</a>
-                  <p></p>
-                  <img src="../../../assets/estados-unidos.svg" alt="" width="30" height="30">
-                  <p></p>
-                  <a class="m-0 text-white m-0 p-footer"
-                    href="mailto:unitedstates@criminallegalassociates.com">unitedstates@criminallegalassociates.com</a>
-                  <p></p>
-                  <img src="../../../assets/puerto-rico.svg" alt="" width="30" height="30">
-                  <p></p>
-                  <a class="m-0 text-white m-0 p-footer"
-                    href="mailto:puertorico@criminallegalassociates.com">puertorico@criminallegalassociates.com</a>
-                </li>
-              </ul>
+    </section>
+    <!-- Navbar-->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg fixed-top py-3">
+        <div class="container"><a href="#" class="navbar-brand text-uppercase font-weight-bold">| Criminal Legal Associates |</a>
+          <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+            class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+
+          <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link text-uppercase font-weight-bold" routerLink=""
+                  routerLinkActive="active">{{'NAV.HOME'| translate}}</a>
+              </li>
+              <li>
+                <a class="nav-link text-uppercase font-weight-bold" routerLink="/nosotros"
+                  routerLinkActive="active">{{'NAV.US' | translate}}</a>
+              </li>
+              <li>
+                <a class="nav-link text-uppercase font-weight-bold" routerLink="/abogados"
+                  routerLinkActive="active">{{'NAV.LAWYER' | translate}}</a>
+              </li>
+              <li class="nav-item mx-2">
+                <div class="form-group m-0 pt-1" id="idiomas">
+                  <select class="form-control form-control-sm border-0" (change)="selectLeague($event)">
+                    <option value="es">ES</option>
+                    <option value="en">EN</option>
+                  </select>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Nosotros-->
+    <div class="row m-0 p-0">
+      <div class="col-12">
+        <h1 class="text-center title-about estilo-letra">{{'ABOUT.ABOUTUS' | translate}}</h1>
+        <div class="px-5">
+          <p class="text-justify estilo-letra">{{'ABOUT.ABOUTWE' | translate}}</p>
+
+        </div>
+      </div>
+      <div class="col-12 my-5">
+        <div class="row m-0 p-0">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+            <div class="row m-0 p-0">
+              <div class="col-12 text-center">
+                <img src="../../assets/vision.svg" alt="" width="100" height="100">
+              </div>
+              <div class="col-12">
+                <h1 class="text-center estilo-letra title-about-pre">{{'ABOUT.VIEW' | translate}}</h1>
+                <p class="text-justify estilo-letra">{{'ABOUT.ABOUTVIEWDESCRIPTION' | translate}}</p>
+              </div>
             </div>
           </div>
-          <!--Redes Sociales Iconos-->
-          <!--
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+            <div class="row m-0 p-0">
+              <div class="col-12 text-center">
+                <img src="../../assets/negocios.svg" alt="" width="100" height="100">
+              </div>
+              <div class="col-12">
+                <h1 class="text-center estilo-letra title-about-pre">{{'ABOUT.MISSION' | translate}}</h1>
+                <p class="text-justify estilo-letra">{{'ABOUT.ABOUTMISIONDESCRIPTION'|translate}}</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+            <div class="row m-0 p-0">
+              <div class="col-12 text-center">
+                <img src="../../assets/pruebas.svg" alt="" width="100" height="100">
+              </div>
+              <div class="col-12">
+                <h1 class="text-center estilo-letra title-about-pre">{{'ABOUT.CORPORATEVALUES' | translate}}</h1>
+                <u class="text-justify estilo-letra" style="font-weight: bold;">{{'ABOUT.COMMITMENT' | translate}}</u>
+                <p class="text-justify estilo-letra">{{'ABOUT.COMMITMENT1' | translate}}</p>
+                <u class="text-justify estilo-letra" style="font-weight: bold;">{{'ABOUT.LOYALTY' | translate}}</u>
+                <p class="text-justify estilo-letra">{{'ABOUT.LOYALTY1' | translate}}</p>
+                <u class="text-justify estilo-letra" style="font-weight: bold;">{{'ABOUT.JUSTICE' | translate}}</u>
+                <p class="text-justify estilo-letra">{{'ABOUT.JUSTICE1' | translate}}</p>
+                <u class="text-justify estilo-letra" style="font-weight: bold;">{{'ABOUT.ETHICS' | translate}}</u>
+                <P class="text-justify estilo-letra">{{'ABOUT.ETHICS1' | translate}}</P>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- WHATSAPP -->
+  <div class="whatsapp">
+    <a href="https://api.whatsapp.com/send?phone=13054977656&text='Hola,%20necesito%20ayuda%20legal'" target="_blank">
+      <img src="../../assets/whatsapp.png" alt="logo_whatsapp" srcset="" width="70">
+    </a>
+  </div>
+  <!--Footer-->
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!------ Include the above in your HEAD tag ---------->
+  <section id="footer">
+    <div class="container">
+      <div class="row m-0 d-flex justify-content-center py-3 align-items-center">
+        <!--LLamenos-->
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>
+            <img src="../../../assets/phone.svg" alt="" width="50" height="50">
+          </h5>
+          <ul class="list-unstyled quick-links">
+            <li>
+              <p class="m-0  p-footer">{{ 'FOOTER.CALLNOW' | translate}}</p>
+              <img src="../../../assets/colombia.svg" alt="" width="30" height="30">
+              <p></p>
+              <a class="m-0  p-footer" href="tel:+573012145455">(301) 582-0657</a>
+              <p></p>
+              <img src="../../../assets/estados-unidos.svg" alt="" width="30" height="30">
+              <p></p>
+              <a class="m-0  p-footer" href="tel:+13054977656"> (305) 497-7656</a>
+              <p></p>
+              <img src="../../../assets/puerto-rico.svg" alt="" width="30" height="30">
+              <p></p>
+              <a class="m-0  p-footer" href="tel:+10087874631363">(787) 463-1363</a>
+          </ul>
+        </div>
+        <!-- Ubicacion-->
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>
+            <img src="../../../assets/placeholder.svg" alt="" width="50" height="50">
+          </h5>
+          <ul class="list-unstyled quick-links">
+            <li>
+              <p class=" m-0 p-footer">{{ 'FOOTER.VISITOFFICE' | translate}}</p>
+              <img src="../../../assets/colombia.svg" alt="" width="30" height="30">
+              <p></p>
+              <p class=" m-0  m-0 p-footer">Cra 24 #35-43 Bucaramanga, Colombia</p>
+              <p></p>
+              <img src="../../../assets/estados-unidos.svg" alt="" width="30" height="30">
+              <p></p>
+              <p class="m-0  m-0 p-footer"> 13727 SW 152 ST, suite 726 Miami, FL 33177</p>
+              <p></p>
+              <img src="../../../assets/puerto-rico.svg" alt="" width="30" height="30">
+              <p></p>
+              <p class=" m-0  m-0 p-footer">Domenech 220 # 2036 San Juan, PR 00918</p>
+            </li>
+          </ul>
+        </div>
+        <!--Escribenos-->
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>
+            <img src="../../../assets/email.svg" alt="" width="50" height="50">
+          </h5>
+          <ul class="list-unstyled quick-links">
+            <li>
+              <p class=" m-0  m-0 p-footer ">{{ 'FOOTER.SENDMESSAGE' | translate}}</p>
+              <img src="../../../assets/colombia.svg" alt="" width="30" height="30">
+              <p></p>
+              <a class=" m-0  m-0 p-footer"
+                href="mailto:colombia@criminallegalassociates.com">colombia@criminallegalassociates.com</a>
+              <p></p>
+              <img src="../../../assets/estados-unidos.svg" alt="" width="30" height="30">
+              <p></p>
+              <a class="m-0  m-0 p-footer"
+                href="mailto:unitedstates@criminallegalassociates.com">unitedstates@criminallegalassociates.com</a>
+              <p></p>
+              <img src="../../../assets/puerto-rico.svg" alt="" width="30" height="30">
+              <p></p>
+              <a class="m-0  m-0 p-footer"
+                href="mailto:puertorico@criminallegalassociates.com">puertorico@criminallegalassociates.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--Redes Sociales Iconos-->
+      <!--
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
         <ul class="list-unstyled list-inline social text-center">
@@ -158,20 +202,18 @@
       <hr>
     </div>
     -->
-          <!--Derechos de Autor-->
+      <!--Derechos de Autor-->
+      <p></p>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-left text-white">
+          <p class="h6 text-white">Copyright © 2022,<a class="text-white ml-2" href="https://www.criminallegalassociates.com"
+              target="_blank">Criminal Legal Associates.</a></p>
           <p></p>
-          <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-left text-white">
-              <p class="h6">Copyright © 2022,<a class="text-green ml-2" href="https://www.criminallegalassociates.com"
-                  target="_blank">Criminal Legal Associates.</a></p>
-              <p></p>
-              <p class="h6">Creado y Diseñado por<a class="text-green ml-2" href="tel:+573012145455" target="_blank">Ivan
-                  Ricardo Diaz C.</a></p>
-            </div>
-            <hr>
-          </div>
+          <p class="h6 text-white">Creado y Diseñado por<a class="text-white ml-2" href="tel:+573012145455" target="_blank">Ivan
+              Ricardo Diaz C.</a></p>
         </div>
-      </section>
+        <hr>
+      </div>
+    </div>
+  </section>
 </ng-container>
-
-

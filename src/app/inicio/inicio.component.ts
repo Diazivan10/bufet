@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { NgForm, FormsModule, FormBuilder, Validators, NgModel } from '@angular/forms';
 import { HttpClient } from "@angular/common/http";
+import { TranslateService } from '@ngx-translate/core';
 import { map } from "rxjs/operators";
 // import Swiper core and required modules
 import SwiperCore, {
@@ -25,6 +26,8 @@ SwiperCore.use([EffectFade, Navigation, Pagination, Scrollbar, A11y, Virtual, Au
   styleUrls: ['./inicio.component.css']
 })
 export class InicioComponent implements OnInit {
+  toggle: boolean = false;
+  @Output() open: EventEmitter<boolean> = new EventEmitter();
   config: SwiperOptions = {
     slidesPerView: 1.5,
     spaceBetween: 40,
@@ -58,10 +61,17 @@ export class InicioComponent implements OnInit {
   );
   
 
-
-  constructor(private _http: HttpClient, private toastr: ToastrService){}
-
+  constructor(private _http: HttpClient, private toastr: ToastrService, private translate: TranslateService){}
+    
+  
   ngOnInit(): void {
+  }
+  selectLeague(idioma: any) {
+    this.translate.use(idioma.target.value);
+  }
+  show() {
+    this.toggle = !this.toggle
+    this.open.emit(this.toggle);
   }
 
   onSwiper(swiper: any) {
